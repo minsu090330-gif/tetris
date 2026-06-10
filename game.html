@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<!-- saved from url=(0132)blob:https://4pz5q99vc0thedledlp75n3w6ubsu1dgioczf03ydg1cjyjc7s-h906969431.scf.usercontent.goog/88a52e43-05a2-42a8-9099-a5856c4013f4 -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6ImE1MTMzNTUyZGIzZmQ1ZWM5NjdlZWFkNjk3ZjNhZTgwYjliNzk1ZjQiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIwMzU2MDMwNzEwODA2MTgwMzA0MiIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjX2ExZDQ3MDI1Y2IxZDE3OTNfbmVvbl90ZXRyaXMuaHRtbC03ODYifSwiZXhwIjoxNzc5MjY1NzIwLCJpYXQiOjE3NzkyNjIxMjAsImFsZyI6IlJTMjU2In0.p04hiXC-y7VH3bdXOimvnEQEKvoZsyD9kv0utslOj2U-cn0ahZhCWfdQOJZ1KyPrXM6bLeuY0I2CkQ2kfnujjisMU0cB8Nhr2RXcZYLi0UF47YDlY6TkSY9WdaOV6tjVCDpCn1j0IxSfybaCE-zEOvENUCueyjCqVcs2S1fZNH19jLUJbHpAwrvTl_YyVxOfa8de3Tuk6TkMs8nACr0LORQCDzhTrHDRE95LYr6ywDmaAg2vrbEVUWNbZJJyST7Cn77Ae0DLBU2dG_UuqOxMV66EC4Q97_Pq43e5AKwypmusHpRi9eaMnztkjGAvDLQt6Lpmp1rVImDomm_9cgRdGg","c_a1d47025cb1d1793_neon_tetris.html-786")</script><script>(function(){'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var n=l(this);
+function p(a,b){if(b)a:{var d=n;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&h(d,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});p("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,b){var d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);var c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var v=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let x=null;function y(a={}){return x?x:a.l?x=a.l:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function A(a,b={}){var d;if(!(d=b.width)){d=z(a,"border-left-width");var c=z(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=z(a,"border-top-width"),c=z(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function B(a){return new Promise((b,d)=>{var c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function D(a,b,d){return t(function*(){var c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return C(c)})}
+var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(d=>{var c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function G(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=F(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,d){return t(function*(){var c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);var e=yield c.blob();return new Promise((f,g)=>{var k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(d({o:c,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function K(a,b,d){var c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function L(a,b,d){return t(function*(){var c=K(a,b,d.C);if(J[c]!=null)return J[c];d.u&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield I(a,d.i,({o:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=d.B||""}return J[c]=e})};const M={P:"application/font-woff",R:"application/font-woff",N:"application/font-truetype",v:"application/vnd.ms-fontobject",H:"image/png",F:"image/jpeg",D:"image/jpeg",A:"image/gif",M:"image/tiff",L:"image/svg+xml",O:"image/webp"};function N(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function O(a){return t(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function aa(a,b){return t(function*(){if(a.currentSrc){var d=document.createElement("canvas");let c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return B(d)}d=a.poster;d=yield L(d,M[N(d).toLowerCase()]||"",b);return B(d)})}
+function ba(a,b){return t(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield P(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ca(a,b){return t(function*(){return E(a,HTMLCanvasElement)?O(a):E(a,HTMLVideoElement)?aa(a,b):E(a,HTMLIFrameElement)?ba(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function da(a,b,d){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||E(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>P(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function ea(a,b,d){var c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):y(d).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function fa(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function ha(a,b){return t(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield P(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function P(a,b,d){return t(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ca(c,b)).then(c=>da(a,c,b)).then(c=>{E(c,Element)&&(ea(a,c,b),G(a,c,":before",b),G(a,c,":after",b),E(a,HTMLTextAreaElement)&&(c.textContent=a.value),E(a,HTMLInputElement)&&c.setAttribute("value",a.value),fa(a,c));return c}).then(c=>ha(c,b)):null})};const Q=/url\((['"]?)([^'"]+?)\1\)/g,ia=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,ja=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ka(a){var b=[];a.replace(Q,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!H(d))}
+function la(a,b,d,c){return t(function*(){try{let e=d?(new URL(b,d||void 0)).toString():b,f;f=yield L(e,M[N(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function ma(a,{I:b}){return b?a.replace(ja,d=>{for(;;){let [c,,e]=ia.exec(d)||[];if(!e)return"";if(e===b)return`src: ${c};`}}):a}
+function R(a,b,d){return t(function*(){if(a.search(Q)===-1)return a;var c=ma(a,d);return ka(c).reduce((e,f)=>e.then(g=>la(g,f,b,d)),Promise.resolve(c))})};function S(a,b,d){return t(function*(){var c,e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield R(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function na(a,b){return t(function*(){(yield S("background",a,b))||(yield S("background-image",a,b));(yield S("mask",a,b))||(yield S("-webkit-mask",a,b))||(yield S("mask-image",a,b))||(yield S("-webkit-mask-image",a,b))})}
+function oa(a,b){return t(function*(){var d=E(a,HTMLImageElement);if(d&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield L(c,M[N(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.m?(...k)=>{try{f(b.m(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function pa(a,b){return t(function*(){var d=w(a.childNodes).map(c=>T(c,b));yield Promise.all(d).then(()=>a)})}function T(a,b){return t(function*(){E(a,Element)&&(yield na(a,b),yield oa(a,b),yield pa(a,b))})};const U={};function V(a){return t(function*(){var b=U[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return U[a]=b})}function W(a,b){return t(function*(){var d=a.cssText,c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){var g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.i,({result:k})=>{d=d.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>d)})}
+function X(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function qa(a,b){return t(function*(){var d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=V(f.href).then(m=>W(m,b)).then(m=>X(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Da){}})).catch(()=>{});c.push(f)}})}catch(f){let g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&c.push(V(e.href).then(k=>W(k,b)).then(k=>X(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function ra(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(Q)!==-1)}function sa(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=w(a.ownerDocument.styleSheets);d=yield qa(d,b);return ra(d)})}
+function ta(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var d=new Set;b(a);return d}function ua(a,b){return t(function*(){var d=yield sa(a,b),c=ta(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>R(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function va(a,b){return t(function*(){var d=b.j!=null?b.j:b.K?null:yield ua(a,b);if(d){let c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function wa(a,b={}){return t(function*(){var {width:d,height:c}=A(a,b),e=yield P(a,b,!0);yield va(e,b);yield T(e,b);u(e,b);return yield D(e,d,c)})}
+function xa(a,b={}){return t(function*(){var {width:d,height:c}=A(a,b),e=yield wa(a,b);e=yield B(e);var f=document.createElement("canvas"),g=f.getContext("2d"),k=b.G||window.devicePixelRatio||1,m=b.h||d,q=b.g||c;f.width=m*k;f.height=q*k;!b.J&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function ya(a,b={}){return t(function*(){return(yield xa(a,b)).toDataURL()})};const za=["gemini.google.com","corp.google.com","proxy.googlers.com"];function Y(){return document.body.querySelectorAll('[class*="animate"]').length>0}function Z(a){return t(function*(){try{return yield ya(a,{h:a.offsetWidth,g:a.offsetHeight})}catch(d){var b=a.offsetHeight;let c=document.createElement("canvas");c.width=a.offsetWidth;c.height=b;return c.toDataURL("image/png")}})}
+function Aa(){return t(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ba(a){return t(function*(){var b=document.body;if(Y()){var d=yield Aa();b=d;document.body.appendChild(d)}d=yield Z(b);Y()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:d,topOffset:document.documentElement.scrollTop},a.origin)})}function Ca(a){return t(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
+window.addEventListener("message",a=>t(function*(){if(za.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ba(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ca(a)))}}));
+})();</script><script>(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script>
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.i=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.g=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.h="";var l=0,t=null,r=null,q=[],F=new TextEncoder,G=new TextDecoder;
+c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*16|0;return(f===
+"x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;(g=t)==null||g.postMessage(a)}};
+Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script>(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script>(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Arcade Tetris - 8-Bit Edition</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Pixel Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Noto+Sans+KR:wght@400;700&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #121216;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+
+        .arcade-font {
+            font-family: 'Press Start 2P', monospace;
+        }
+
+        /* 오락실 브라운관 모니터(CRT) 느낌 유도 */
+        .crt-monitor {
+            position: relative;
+            overflow: hidden;
+            border: 8px solid #2e303d;
+            border-radius: 12px;
+            background-color: #050508;
+            box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.8), 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        /* CRT 화면 미세 주사선 효과 */
+        .crt-monitor::after {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            aspect-ratio: auto;
+            background-size: 100% 4px, 6px 100%;
+            pointer-events: none;
+            z-index: 5;
+        }
+
+        /* 아케이드 컨트롤러 빨간 단추 */
+        .btn-arcade {
+            background: radial-gradient(circle, #ff3b30 0%, #c30010 100%);
+            border: 3px solid #1a1a24;
+            border-bottom-width: 6px;
+            box-shadow: 0 4px 0 #5a0005, 0 6px 10px rgba(0, 0, 0, 0.5);
+            transition: all 0.05s ease;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        .btn-arcade:active {
+            border-bottom-width: 3px;
+            transform: translateY(3px);
+            box-shadow: 0 1px 0 #5a0005, 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* 노란색 보조 아케이드 단추 */
+        .btn-arcade-yellow {
+            background: radial-gradient(circle, #ffcc00 0%, #cc9900 100%);
+            border: 3px solid #1a1a24;
+            border-bottom-width: 6px;
+            box-shadow: 0 4px 0 #5f4500, 0 6px 10px rgba(0, 0, 0, 0.5);
+        }
+        .btn-arcade-yellow:active {
+            border-bottom-width: 3px;
+            transform: translateY(3px);
+            box-shadow: 0 1px 0 #5f4500, 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* 파란색 보조 아케이드 단추 */
+        .btn-arcade-blue {
+            background: radial-gradient(circle, #007aff 0%, #0040a8 100%);
+            border: 3px solid #1a1a24;
+            border-bottom-width: 6px;
+            box-shadow: 0 4px 0 #002060, 0 6px 10px rgba(0, 0, 0, 0.5);
+        }
+        .btn-arcade-blue:active {
+            border-bottom-width: 3px;
+            transform: translateY(3px);
+            box-shadow: 0 1px 0 #002060, 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* 화면 흔들림 효과 */
+        .shake {
+            animation: shake-anim 0.15s linear infinite;
+        }
+
+        @keyframes shake-anim {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(0px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.-top-3{top:-0.75rem}.bottom-2{bottom:0.5rem}.left-0{left:0px}.left-2{left:0.5rem}.left-4{left:1rem}.right-0{right:0px}.right-2{right:0.5rem}.top-1\.5{top:0.375rem}.top-6{top:1.5rem}.z-10{z-index:10}.z-20{z-index:20}.my-auto{margin-top:auto;margin-bottom:auto}.mb-4{margin-bottom:1rem}.mb-8{margin-bottom:2rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-11{height:2.75rem}.h-14{height:3.5rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.min-h-\[110px\]{min-height:110px}.w-11{width:2.75rem}.w-14{width:3.5rem}.w-16{width:4rem}.w-32{width:8rem}.w-full{width:100%}.max-w-5xl{max-width:64rem}.max-w-md{max-width:28rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}@keyframes bounce{0%, 100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(0.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,0.2,1)}}.animate-bounce{animation:bounce 1s infinite}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.select-none{-webkit-user-select:none;user-select:none}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.justify-around{justify-content:space-around}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border-2{border-width:2px}.border-4{border-width:4px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-dashed{border-style:dashed}.border-slate-600{--tw-border-opacity:1;border-color:rgb(71 85 105 / var(--tw-border-opacity, 1))}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.bg-black\/95{background-color:rgb(0 0 0 / 0.95)}.bg-red-700{--tw-bg-opacity:1;background-color:rgb(185 28 28 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23 / var(--tw-bg-opacity, 1))}.bg-yellow-500{--tw-bg-opacity:1;background-color:rgb(234 179 8 / var(--tw-bg-opacity, 1))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-red-600{--tw-gradient-from:#dc2626 var(--tw-gradient-from-position);--tw-gradient-to:rgb(220 38 38 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-orange-500{--tw-gradient-to:rgb(249 115 22 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #f97316 var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-yellow-400{--tw-gradient-to:#facc15 var(--tw-gradient-to-position)}.p-2{padding:0.5rem}.p-1{padding:0.25rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-1{padding-bottom:0.25rem}.text-center{text-align:center}.text-\[10px\]{font-size:10px}.text-\[6px\]{font-size:6px}.text-\[8px\]{font-size:8px}.text-\[9px\]{font-size:9px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.leading-loose{line-height:2}.leading-relaxed{line-height:1.625}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-black{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity, 1))}.text-cyan-400{--tw-text-opacity:1;color:rgb(34 211 238 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-orange-400{--tw-text-opacity:1;color:rgb(251 146 60 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-950{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-400{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity, 1))}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-100{transition-duration:100ms}.duration-300{transition-duration:300ms}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.hover\:bg-yellow-400:hover{--tw-bg-opacity:1;background-color:rgb(250 204 21 / var(--tw-bg-opacity, 1))}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 768px){.md\:mt-6{margin-top:1.5rem}.md\:p-4{padding:1rem}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 1024px){.lg\:min-h-\[140px\]{min-height:140px}.lg\:w-48{width:12rem}.lg\:flex-row{flex-direction:row}.lg\:flex-col{flex-direction:column}.lg\:justify-start{justify-content:flex-start}.lg\:gap-8{gap:2rem}}</style></head>
+<body class="flex flex-col items-center justify-between min-h-screen p-2 md:p-4 select-none">
+
+    <!-- 상단 헤더 영역 -->
+    <header class="w-full max-w-md text-center py-2">
+        <h1 class="text-xl md:text-2xl font-black arcade-font text-yellow-400 tracking-wider">
+            RETRO ARCADE
+        </h1>
+        <p class="text-[9px] text-emerald-400 font-bold tracking-widest arcade-font mt-1">SYSTEM 8-BIT STEREO</p>
+    </header>
+
+    <!-- 메인 오락실 기기 형태의 보드 레이아웃 -->
+    <main class="w-full max-w-5xl flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-8 my-auto">
+        
+        <!-- 왼쪽 정보창 (HOLD / SCORE / SOUND) -->
+        <div class="flex flex-row lg:flex-col gap-3 w-full max-w-md lg:w-48 justify-between lg:justify-start">
+            <!-- HOLD 캔버스 -->
+            <div class="flex-1 bg-slate-900 border-4 border-slate-700 rounded-xl p-3 flex flex-col items-center justify-center min-h-[110px] lg:min-h-[140px] relative">
+                <span class="absolute top-1.5 left-2 text-[8px] font-bold text-slate-400 arcade-font">HOLD</span>
+                <canvas id="holdCanvas" width="80" height="80" class="mt-2"></canvas>
+            </div>
+
+            <!-- 스코어 현황판 -->
+            <div class="flex-1 bg-slate-900 border-4 border-slate-700 rounded-xl p-3 flex flex-col justify-around gap-1.5 text-xs">
+                <div class="flex justify-between items-center border-b-2 border-dashed border-slate-800 pb-1">
+                    <span class="text-[8px] text-slate-400 arcade-font">SCORE</span>
+                    <span id="scoreVal" class="text-sm font-bold arcade-font text-yellow-400">0</span>
+                </div>
+                <div class="flex justify-between items-center border-b-2 border-dashed border-slate-800 pb-1">
+                    <span class="text-[8px] text-slate-400 arcade-font">LEVEL</span>
+                    <span id="levelVal" class="text-sm font-bold arcade-font text-emerald-400">1</span>
+                </div>
+                <div class="flex justify-between items-center border-b-2 border-dashed border-slate-800 pb-1">
+                    <span class="text-[8px] text-slate-400 arcade-font">LINES</span>
+                    <span id="linesVal" class="text-sm font-bold arcade-font text-cyan-400">0</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span class="text-[8px] text-slate-400 arcade-font">COMBO</span>
+                    <span id="comboVal" class="text-sm font-bold arcade-font text-red-500">0</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 메인 게임 모니터 (CRT 캐비닛 패널) -->
+        <div id="boardFrame" class="relative crt-monitor p-1">
+            <!-- 위급상황 글리치 경보 배너 -->
+            <div id="dangerBanner" class="absolute top-6 left-0 right-0 text-center bg-red-700 text-white font-black py-1.5 text-[8px] arcade-font tracking-widest animate-pulse hidden z-20">
+                ⚠️ GLITCH DETECTED ⚠️
+            </div>
+
+            <!-- 글리치 습격 프로그레스 바 -->
+            <div class="absolute bottom-2 left-2 right-2 h-2 bg-slate-950 overflow-hidden z-20 border-2 border-slate-800">
+                <div id="earthquakeProgress" class="h-full bg-gradient-to-r from-red-600 via-orange-500 to-yellow-400 transition-all duration-100" style="width: 100%"></div>
+            </div>
+
+            <!-- 게임 전용 캔버스 -->
+            <canvas id="gameCanvas" width="300" height="600" class="block"></canvas>
+
+            <!-- 오락실 정지/게임오버 오버레이 화면 -->
+            <div id="overlay" class="absolute inset-0 bg-black/95 flex flex-col items-center justify-center text-center p-6 transition-all duration-300 z-10">
+                <div class="text-red-500 text-lg md:text-xl font-black arcade-font mb-4 animate-bounce">
+                    GAME OVER
+                </div>
+                <div id="overlayDesc" class="text-[8px] arcade-font text-slate-400 mb-8 leading-loose">INSERT COIN TO PLAY<br><br><span class="text-[6px] text-emerald-400">PC: PRESS ENTER KEY TO START</span></div>
+                <button id="startBtn" class="px-6 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-black rounded-lg shadow-lg active:scale-95 transition arcade-font text-[10px] tracking-wide">INSERT COIN</button>
+            </div>
+        </div>
+
+        <!-- 오른쪽 정보창 (NEXT / SOUND ON-OFF / GAME INFO) -->
+        <div class="flex flex-row lg:flex-col gap-3 w-full max-w-md lg:w-48 justify-between lg:justify-start">
+            <!-- NEXT 캔버스 -->
+            <div class="flex-1 bg-slate-900 border-4 border-slate-700 rounded-xl p-3 flex flex-col items-center justify-center min-h-[110px] lg:min-h-[140px] relative">
+                <span class="absolute top-1.5 left-2 text-[8px] font-bold text-slate-400 arcade-font">NEXT</span>
+                <canvas id="nextCanvas" width="80" height="80" class="mt-2"></canvas>
+            </div>
+
+            <!-- 사운드 및 정보 패널 -->
+            <div class="flex-1 bg-slate-900 border-4 border-slate-700 rounded-xl p-3 flex flex-col justify-center gap-3">
+                <!-- 사운드 제어 토글 -->
+                <button id="audioToggleBtn" class="w-full py-2 bg-slate-800 hover:bg-slate-700 text-white rounded font-bold text-[8px] arcade-font flex items-center justify-center gap-2 border-2 border-slate-600">
+                    <i id="audioIcon" class="fa-solid fa-volume-high"></i>
+                    <span id="audioText">SOUND: ON</span>
+                </button>
+
+                <!-- 아케이드 수칙 요약 -->
+                <div class="text-[8px] text-slate-400 leading-relaxed arcade-font space-y-2">
+                    <div class="text-orange-400 font-bold border-b border-slate-800 pb-1">RULE BOOK</div>
+                    <p>• <b>COMBO:</b> 연속 격파 시 사운드가 고조되며 점수 폭증!</p>
+                    <p>• <b>GLITCH:</b> 25초마다 화면 하단에 글리치 블록이 침투합니다!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 오락실 아케이드 컨트롤 스틱 & 빨간 단추 인터페이스 -->
+    <div class="w-full max-w-md bg-slate-900 p-4 rounded-2xl border-4 border-slate-700 mt-4 md:mt-6 shadow-2xl relative">
+        <div class="absolute -top-3 left-4 px-2 bg-slate-900 text-[8px] arcade-font text-slate-400">ARCADE CABINET CONTROLLER</div>
+        
+        <div class="flex items-center justify-between gap-4">
+            <!-- 왼쪽: 스틱 방향키 (십자패드) -->
+            <div class="grid grid-cols-3 gap-1 w-32 shrink-0">
+                <div></div>
+                <button id="ctrlRotate" class="btn-arcade h-11 w-11 rounded-full flex items-center justify-center text-white font-black text-xs">
+                    W
+                </button>
+                <div></div>
+
+                <button id="ctrlLeft" class="btn-arcade h-11 w-11 rounded-full flex items-center justify-center text-white font-black text-xs">
+                    A
+                </button>
+                <button id="ctrlDown" class="btn-arcade h-11 w-11 rounded-full flex items-center justify-center text-white font-black text-xs">
+                    S
+                </button>
+                <button id="ctrlRight" class="btn-arcade h-11 w-11 rounded-full flex items-center justify-center text-white font-black text-xs">
+                    D
+                </button>
+            </div>
+
+            <!-- 오른쪽: 클래식 아케이드 둥근 기계 단추들 -->
+            <div class="flex gap-3 justify-end items-center flex-1">
+                <!-- HOLD (C버튼/파란색) -->
+                <button id="ctrlHold" class="btn-arcade btn-arcade-blue h-14 w-14 rounded-full flex flex-col items-center justify-center text-white font-bold">
+                    <span class="text-[6px] arcade-font">HOLD</span>
+                    <span class="text-[8px] arcade-font mt-0.5">C</span>
+                </button>
+                <!-- HARD DROP (SPACE/노란색) -->
+                <button id="ctrlHardDrop" class="btn-arcade btn-arcade-yellow h-16 w-16 rounded-full flex flex-col items-center justify-center text-slate-950 font-black">
+                    <span class="text-[6px] arcade-font">DROP</span>
+                    <span class="text-[8px] arcade-font mt-0.5">SPACE</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 푸터 게임 조작 안내 -->
+    <footer class="text-[8px] text-slate-500 text-center py-2 mt-2 leading-relaxed arcade-font">
+        <b>PC KEYBOARD:</b> MOVE [A,D / ←→] | ROTATE [W / ↑] | SOFT DROP [S / ↓]<br>
+        HARD DROP [SPACE] | HOLD [C / SHIFT] | PAUSE [P / ESC] | START [ENTER]
+    </footer>
+
+    <!-- 게임 구동 로직 스크립트 -->
+    <script>
+        // --- 게임 설정 및 아케이드 맵 규격 ---
+        const COLS = 10;
+        const ROWS = 20;
+        const BLOCK_SIZE = 30; // 300x600 표준 규격
+        const MINI_BLOCK_SIZE = 18;
+
+        // --- 오디오 효과음 신디사이저 모듈 (Web Audio API) ---
+        let audioEnabled = true;
+        let audioCtx = null;
+
+        function initAudio() {
+            if (!audioCtx) {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            }
+        }
+
+        // 공통 신디 비프 사운드 플레이어
+        function playSound(type) {
+            if (!audioEnabled) return;
+            try {
+                initAudio();
+                if (audioCtx.state === 'suspended') {
+                    audioCtx.resume();
+                }
+
+                const now = audioCtx.currentTime;
+                
+                switch(type) {
+                    case 'move': // 블록 이동 소리 (가벼운 단음)
+                        {
+                            const osc = audioCtx.createOscillator();
+                            const gain = audioCtx.createGain();
+                            osc.type = 'triangle';
+                            osc.frequency.setValueAtTime(150, now);
+                            osc.frequency.exponentialRampToValueAtTime(100, now + 0.08);
+                            gain.gain.setValueAtTime(0.1, now);
+                            gain.gain.exponentialRampToValueAtTime(0.01, now + 0.08);
+                            osc.connect(gain);
+                            gain.connect(audioCtx.destination);
+                            osc.start(now);
+                            osc.stop(now + 0.08);
+                        }
+                        break;
+                    case 'rotate': // 회전 소리 (단순 피치 업)
+                        {
+                            const osc = audioCtx.createOscillator();
+                            const gain = audioCtx.createGain();
+                            osc.type = 'square';
+                            osc.frequency.setValueAtTime(250, now);
+                            osc.frequency.exponentialRampToValueAtTime(450, now + 0.08);
+                            gain.gain.setValueAtTime(0.08, now);
+                            gain.gain.exponentialRampToValueAtTime(0.01, now + 0.08);
+                            osc.connect(gain);
+                            gain.connect(audioCtx.destination);
+                            osc.start(now);
+                            osc.stop(now + 0.08);
+                        }
+                        break;
+                    case 'drop': // 바닥 충돌 고정 소리
+                        {
+                            const osc = audioCtx.createOscillator();
+                            const gain = audioCtx.createGain();
+                            osc.type = 'sawtooth';
+                            osc.frequency.setValueAtTime(120, now);
+                            osc.frequency.exponentialRampToValueAtTime(60, now + 0.12);
+                            gain.gain.setValueAtTime(0.12, now);
+                            gain.gain.exponentialRampToValueAtTime(0.01, now + 0.12);
+                            osc.connect(gain);
+                            gain.connect(audioCtx.destination);
+                            osc.start(now);
+                            osc.stop(now + 0.12);
+                        }
+                        break;
+                    case 'clear': // 8비트 아르페지오 (팬파레) 라인 소거음
+                        {
+                            const notes = [261.63, 329.63, 392.00, 523.25]; // C-E-G-C 상향음
+                            notes.forEach((freq, idx) => {
+                                const osc = audioCtx.createOscillator();
+                                const gain = audioCtx.createGain();
+                                osc.type = 'square';
+                                osc.frequency.setValueAtTime(freq, now + idx * 0.06);
+                                gain.gain.setValueAtTime(0.1, now + idx * 0.06);
+                                gain.gain.exponentialRampToValueAtTime(0.01, now + idx * 0.06 + 0.12);
+                                osc.connect(gain);
+                                gain.connect(audioCtx.destination);
+                                osc.start(now + idx * 0.06);
+                                osc.stop(now + idx * 0.06 + 0.15);
+                            });
+                        }
+                        break;
+                    case 'bomb': // 백색 소음 기반 폭발 소리
+                        {
+                            const bufferSize = audioCtx.sampleRate * 0.3; // 0.3초 화이트 노이즈
+                            const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+                            const data = buffer.getChannelData(0);
+                            for (let i = 0; i < bufferSize; i++) {
+                                data[i] = Math.random() * 2 - 1;
+                            }
+                            const noiseNode = audioCtx.createBufferSource();
+                            noiseNode.buffer = buffer;
+                            
+                            const filter = audioCtx.createBiquadFilter();
+                            filter.type = 'lowpass';
+                            filter.frequency.setValueAtTime(600, now);
+                            filter.frequency.exponentialRampToValueAtTime(100, now + 0.25);
+
+                            const gain = audioCtx.createGain();
+                            gain.gain.setValueAtTime(0.3, now);
+                            gain.gain.exponentialRampToValueAtTime(0.01, now + 0.3);
+
+                            noiseNode.connect(filter);
+                            filter.connect(gain);
+                            gain.connect(audioCtx.destination);
+                            noiseNode.start(now);
+                        }
+                        break;
+                    case 'glitch': // 시스템 에러 경보
+                        {
+                            const osc = audioCtx.createOscillator();
+                            const gain = audioCtx.createGain();
+                            osc.type = 'sawtooth';
+                            osc.frequency.setValueAtTime(80, now);
+                            osc.frequency.linearRampToValueAtTime(160, now + 0.2);
+                            gain.gain.setValueAtTime(0.15, now);
+                            gain.gain.exponentialRampToValueAtTime(0.01, now + 0.2);
+                            osc.connect(gain);
+                            gain.connect(audioCtx.destination);
+                            osc.start(now);
+                            osc.stop(now + 0.2);
+                        }
+                        break;
+                    case 'gameover': // 하강 멜로디 (슬픈 전개)
+                        {
+                            const notes = [311.13, 293.66, 277.18, 220.00]; // Eb-D-Db-A 하향음
+                            notes.forEach((freq, idx) => {
+                                const osc = audioCtx.createOscillator();
+                                const gain = audioCtx.createGain();
+                                osc.type = 'triangle';
+                                osc.frequency.setValueAtTime(freq, now + idx * 0.15);
+                                gain.gain.setValueAtTime(0.12, now + idx * 0.15);
+                                gain.gain.exponentialRampToValueAtTime(0.01, now + idx * 0.15 + 0.25);
+                                osc.connect(gain);
+                                gain.connect(audioCtx.destination);
+                                osc.start(now + idx * 0.15);
+                                osc.stop(now + idx * 0.15 + 0.3);
+                            });
+                        }
+                        break;
+                }
+            } catch(e) {
+                // 브라우저에 따라 오디오 지원이 거부될 경우 게임 진행에 무리 없게 방어 처리
+                console.warn('Audio play block:', e);
+            }
+        }
+
+        // --- 8비트 아케이드 클래식 테트리미노 블록 구성 ---
+        const SHAPES = {
+            'I': [[0,0,0,0], [1,1,1,1], [0,0,0,0], [0,0,0,0]],
+            'J': [[1,0,0], [1,1,1], [0,0,0]],
+            'L': [[0,0,1], [1,1,1], [0,0,0]],
+            'O': [[1,1], [1,1]],
+            'S': [[0,1,1], [1,1,0], [0,0,0]],
+            'T': [[0,1,0], [1,1,1], [0,0,0]],
+            'Z': [[1,1,0], [0,1,1], [0,0,0]],
+            // 스페셜 퓨전 폭탄 블록
+            'B': [[0,2,0], [2,3,2], [0,2,0]] 
+        };
+
+        // 오락실 감성에 부합하는 원색 하이 콘트라스트 색상 조합
+        const COLORS = {
+            'I': '#00ffff', // 밝은 시안
+            'J': '#1b75ff', // 코발트 블루
+            'L': '#ff8c00', // 진한 귤색
+            'O': '#ffe600', // 카나리아 옐로우
+            'S': '#00e676', // 에메랄드 그린
+            'T': '#cc00ff', // 오키드 퍼플
+            'Z': '#ff1744', // 체리 레드
+            'B': '#ff3d00', // 마그마 오렌지 (폭탄)
+            'G': '#78909c'  // 무채색 글리치 버그 장애물 블록
+        };
+
+        // --- DOM 연결 ---
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        const holdCanvas = document.getElementById('holdCanvas');
+        const holdCtx = holdCanvas.getContext('2d');
+        const nextCanvas = document.getElementById('nextCanvas');
+        const nextCtx = nextCanvas.getContext('2d');
+
+        const scoreVal = document.getElementById('scoreVal');
+        const levelVal = document.getElementById('levelVal');
+        const linesVal = document.getElementById('linesVal');
+        const comboVal = document.getElementById('comboVal');
+        const boardFrame = document.getElementById('boardFrame');
+        const dangerBanner = document.getElementById('dangerBanner');
+        const earthquakeProgress = document.getElementById('earthquakeProgress');
+
+        const overlay = document.getElementById('overlay');
+        const overlayDesc = document.getElementById('overlayDesc');
+        const startBtn = document.getElementById('startBtn');
+        const audioToggleBtn = document.getElementById('audioToggleBtn');
+        const audioIcon = document.getElementById('audioIcon');
+        const audioText = document.getElementById('audioText');
+
+        // --- 오락실 전역 제어 변수 ---
+        let board = [];
+        let score = 0;
+        let lines = 0;
+        let level = 1;
+        let combo = 0;
+        let gameOver = true;
+        let gamePaused = false;
+        let isDangerState = false;
+
+        let currentPiece = null;
+        let nextPieceType = null;
+        let holdPieceType = null;
+        let canHold = true;
+
+        let dropCounter = 0;
+        let baseDropInterval = 650; // 아케이드 난이도를 위해 기본 속도 상향
+        let dropInterval = 650;
+        let lastTime = 0;
+
+        // 글리치 장애물 시간 관리
+        let earthquakeTimer = 0;
+        const EARTHQUAKE_INTERVAL = 25000; // 25초
+
+        let particles = [];
+
+        // 사운드 토글 온오프 제어
+        audioToggleBtn.addEventListener('click', () => {
+            audioEnabled = !audioEnabled;
+            if (audioEnabled) {
+                audioIcon.className = "fa-solid fa-volume-high";
+                audioText.innerText = "SOUND: ON";
+                initAudio();
+                playSound('move');
+            } else {
+                audioIcon.className = "fa-solid fa-volume-xmark";
+                audioText.innerText = "SOUND: OFF";
+            }
+        });
+
+        // --- 아케이드 초기 설정 시작 ---
+        function init() {
+            initAudio();
+            board = Array.from({ length: ROWS }, () => Array(COLS).fill(0));
+            score = 0;
+            lines = 0;
+            level = 1;
+            combo = 0;
+            gameOver = false;
+            gamePaused = false;
+            isDangerState = false;
+            holdPieceType = null;
+            canHold = true;
+            particles = [];
+            earthquakeTimer = 0;
+
+            updateStats();
+            dangerBanner.classList.add('hidden');
+            
+            nextPieceType = getRandomPieceType();
+            spawnPiece();
+            
+            overlay.classList.add('hidden');
+            
+            lastTime = performance.now();
+            requestAnimationFrame(gameLoop);
+        }
+
+        function spawnPiece() {
+            const type = nextPieceType;
+            nextPieceType = getRandomPieceType();
+            
+            currentPiece = {
+                type: type,
+                matrix: JSON.parse(JSON.stringify(SHAPES[type])),
+                x: Math.floor((COLS - SHAPES[type][0].length) / 2),
+                y: type === 'I' ? -1 : 0
+            };
+
+            canHold = true;
+            drawNext();
+
+            if (checkCollision(currentPiece.matrix, currentPiece.x, currentPiece.y)) {
+                endGame();
+            }
+        }
+
+        function getRandomPieceType() {
+            const rand = Math.random();
+            if (rand < 0.12) {
+                return 'B'; // 💣 폭탄 블록 등판 확률 12%
+            }
+            const types = ['I', 'J', 'L', 'O', 'S', 'T', 'Z'];
+            return types[Math.floor(Math.random() * types.length)];
+        }
+
+        function checkCollision(matrix, px, py) {
+            for (let r = 0; r < matrix.length; r++) {
+                for (let c = 0; c < matrix[r].length; c++) {
+                    if (matrix[r][c] !== 0) {
+                        const boardX = px + c;
+                        const boardY = py + r;
+
+                        if (boardX < 0 || boardX >= COLS || boardY >= ROWS) {
+                            return true;
+                        }
+
+                        if (boardY >= 0 && board[boardY][boardX] !== 0) {
+                            return true;
+                        }
+                    }
+                }
+            }
+            return false;
+        }
+
+        // --- 피스 조작 제어 함수 ---
+        function rotatePiece() {
+            if (gameOver || gamePaused || !currentPiece) return;
+
+            const matrix = currentPiece.matrix;
+            const N = matrix.length;
+            
+            const rotated = Array.from({ length: N }, () => Array(N).fill(0));
+            for (let r = 0; r < N; r++) {
+                for (let c = 0; c < N; c++) {
+                    rotated[c][N - 1 - r] = matrix[r][c];
+                }
+            }
+
+            let originalX = currentPiece.x;
+            let offset = 1;
+            
+            while (checkCollision(rotated, currentPiece.x, currentPiece.y)) {
+                currentPiece.x += offset;
+                offset = -(offset + (offset > 0 ? 1 : -1));
+                
+                if (Math.abs(offset) > matrix[0].length) {
+                    currentPiece.x = originalX;
+                    return; 
+                }
+            }
+            
+            currentPiece.matrix = rotated;
+            playSound('rotate');
+        }
+
+        function moveLeft() {
+            if (gameOver || gamePaused || !currentPiece) return;
+            currentPiece.x--;
+            if (checkCollision(currentPiece.matrix, currentPiece.x, currentPiece.y)) {
+                currentPiece.x++;
+            } else {
+                playSound('move');
+            }
+        }
+
+        function triggerScreenShake() {
+            boardFrame.classList.add('shake');
+            setTimeout(() => {
+                boardFrame.classList.remove('shake');
+            }, 180);
+        }
+
+        function moveRight() {
+            if (gameOver || gamePaused || !currentPiece) return;
+            currentPiece.x++;
+            if (checkCollision(currentPiece.matrix, currentPiece.x, currentPiece.y)) {
+                currentPiece.x--;
+            } else {
+                playSound('move');
+            }
+        }
+
+        function moveDown() {
+            if (gameOver || gamePaused || !currentPiece) return false;
+            currentPiece.y++;
+            if (checkCollision(currentPiece.matrix, currentPiece.x, currentPiece.y)) {
+                currentPiece.y--;
+                lockPiece();
+                return false;
+            }
+            dropCounter = 0; 
+            return true;
+        }
+
+        function hardDrop() {
+            if (gameOver || gamePaused || !currentPiece) return;
+            
+            let dropDist = 0;
+            while (!checkCollision(currentPiece.matrix, currentPiece.x, currentPiece.y + 1)) {
+                currentPiece.y++;
+                dropDist++;
+            }
+            
+            score += dropDist * 2;
+            triggerScreenShake();
+            playSound('drop');
+            lockPiece();
+        }
+
+        function holdPiece() {
+            if (gameOver || gamePaused || !currentPiece || !canHold) return;
+
+            playSound('rotate');
+
+            if (holdPieceType === null) {
+                holdPieceType = currentPiece.type;
+                spawnPiece();
+            } else {
+                const temp = holdPieceType;
+                holdPieceType = currentPiece.type;
+                
+                currentPiece = {
+                    type: temp,
+                    matrix: JSON.parse(JSON.stringify(SHAPES[temp])),
+                    x: Math.floor((COLS - SHAPES[temp][0].length) / 2),
+                    y: temp === 'I' ? -1 : 0
+                };
+            }
+
+            canHold = false;
+            drawHold();
+        }
+
+        function lockPiece() {
+            for (let r = 0; r < currentPiece.matrix.length; r++) {
+                for (let c = 0; c < currentPiece.matrix[r].length; c++) {
+                    if (currentPiece.matrix[r][c] !== 0) {
+                        const boardY = currentPiece.y + r;
+                        if (boardY < 0) {
+                            endGame();
+                            return;
+                        }
+                    }
+                }
+            }
+
+            for (let r = 0; r < currentPiece.matrix.length; r++) {
+                for (let c = 0; c < currentPiece.matrix[r].length; c++) {
+                    if (currentPiece.matrix[r][c] !== 0) {
+                        board[currentPiece.y + r][currentPiece.x + c] = currentPiece.type;
+                    }
+                }
+            }
+
+            if (currentPiece.type === 'B') {
+                triggerBombExplosion(currentPiece.x + 1, currentPiece.y + 1);
+                playSound('bomb');
+            }
+
+            clearLines();
+            checkDangerState();
+            spawnPiece();
+        }
+
+        function checkDangerState() {
+            let blockDetected = false;
+            for (let r = 0; r < 6; r++) {
+                for (let c = 0; c < COLS; c++) {
+                    if (board[r][c] !== 0) {
+                        blockDetected = true;
+                        break;
+                    }
+                }
+                if (blockDetected) break;
+            }
+
+            if (blockDetected) {
+                isDangerState = true;
+                dangerBanner.classList.remove('hidden');
+                dropInterval = Math.max(60, Math.floor(baseDropInterval / 1.6));
+            } else {
+                isDangerState = false;
+                dangerBanner.classList.add('hidden');
+                dropInterval = baseDropInterval;
+            }
+        }
+
+        // 지진 글리치 메커니즘
+        function triggerEarthquakeGarbage() {
+            triggerScreenShake();
+            playSound('glitch');
+            
+            if (board[0].some(val => val !== 0)) {
+                endGame();
+                return;
+            }
+
+            board.shift();
+            
+            const garbageRow = Array(COLS).fill('G');
+            const randomHole = Math.floor(Math.random() * COLS);
+            garbageRow[randomHole] = 0; 
+            
+            board.push(garbageRow);
+
+            if (currentPiece && currentPiece.y > 0) {
+                currentPiece.y--;
+            }
+
+            combo = 0;
+            updateStats();
+            
+            for (let c = 0; c < COLS; c++) {
+                if (c !== randomHole) {
+                    createExplosionParticles(c, ROWS - 1, '#475569');
+                }
+            }
+        }
+
+        function triggerBombExplosion(centerX, centerY) {
+            const radius = 2; 
+            let destroyedCount = 0;
+
+            for (let r = centerY - radius; r <= centerY + radius; r++) {
+                for (let c = centerX - radius; c <= centerX + radius; c++) {
+                    if (r >= 0 && r < ROWS && c >= 0 && c < COLS) {
+                        if (board[r][c] !== 0) {
+                            createExplosionParticles(c, r, COLORS[board[r][c]] || '#f97316');
+                            board[r][c] = 0;
+                            destroyedCount++;
+                        }
+                    }
+                }
+            }
+
+            if (destroyedCount > 0) {
+                score += destroyedCount * 15;
+                updateStats();
+            }
+        }
+
+        function clearLines() {
+            let linesClearedThisTurn = 0;
+
+            for (let r = ROWS - 1; r >= 0; r--) {
+                const isLineFull = board[r].every(val => val !== 0);
+
+                if (isLineFull) {
+                    linesClearedThisTurn++;
+                    
+                    for (let c = 0; c < COLS; c++) {
+                        createExplosionParticles(c, r, COLORS[board[r][c]]);
+                    }
+
+                    board.splice(r, 1);
+                    board.unshift(Array(COLS).fill(0));
+                    r++; 
+                }
+            }
+
+            if (linesClearedThisTurn > 0) {
+                lines += linesClearedThisTurn;
+                combo++; 
+
+                triggerScreenShake();
+                playSound('clear');
+                
+                const scoreTable = [0, 150, 450, 750, 1200]; // 오락실 전용 점수표로 대폭 상향
+                const baseScore = (scoreTable[linesClearedThisTurn] || 1500) * level;
+                const comboMultiplier = 1 + (combo - 1) * 0.25;
+                score += Math.floor(baseScore * comboMultiplier);
+
+                level = Math.floor(lines / 8) + 1;
+                baseDropInterval = Math.max(60, 650 - (level - 1) * 75);
+                
+                if (!isDangerState) {
+                    dropInterval = baseDropInterval;
+                }
+
+                updateStats();
+            } else {
+                combo = 0;
+                updateStats();
+            }
+        }
+
+        function updateStats() {
+            scoreVal.innerText = score;
+            levelVal.innerText = level;
+            linesVal.innerText = lines;
+            comboVal.innerText = combo;
+        }
+
+        // --- 8비트 스타일 복고 도트 입자 파티클 ---
+        function createExplosionParticles(gridX, gridY, color) {
+            const startX = gridX * BLOCK_SIZE + BLOCK_SIZE / 2;
+            const startY = gridY * BLOCK_SIZE + BLOCK_SIZE / 2;
+
+            for (let i = 0; i < 6; i++) {
+                particles.push({
+                    x: startX,
+                    y: startY,
+                    vx: (Math.random() - 0.5) * 8,
+                    vy: (Math.random() - 0.5) * 8 - 2,
+                    color: color,
+                    alpha: 1.0,
+                    size: Math.random() * 5 + 3, // 네모난 픽셀 입자용
+                    decay: Math.random() * 0.05 + 0.03
+                });
+            }
+        }
+
+        function updateParticles() {
+            for (let i = particles.length - 1; i >= 0; i--) {
+                const p = particles[i];
+                p.x += p.vx;
+                p.y += p.vy;
+                p.vy += 0.2; 
+                p.alpha -= p.decay;
+
+                if (p.alpha <= 0) {
+                    particles.splice(i, 1);
+                }
+            }
+        }
+
+        function drawParticles() {
+            particles.forEach(p => {
+                ctx.save();
+                ctx.globalAlpha = p.alpha;
+                ctx.fillStyle = p.color;
+                // 클래식 도트 느낌을 구현하기 위해 완전 사각형 입자로 그리기
+                ctx.fillRect(p.x - p.size/2, p.y - p.size/2, p.size, p.size);
+                ctx.restore();
+            });
+        }
+
+        // --- 도트 그래픽 드로잉 모듈 ---
+        function draw() {
+            ctx.fillStyle = '#050508'; // 완벽한 암전 아케이드 모니터 배경
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // 희미하게 깔리는 고전 격자 그리드 라인
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.02)';
+            ctx.lineWidth = 1;
+            for (let c = 0; c < COLS; c++) {
+                ctx.beginPath();
+                ctx.moveTo(c * BLOCK_SIZE, 0);
+                ctx.lineTo(c * BLOCK_SIZE, canvas.height);
+                ctx.stroke();
+            }
+            for (let r = 0; r < ROWS; r++) {
+                ctx.beginPath();
+                ctx.moveTo(0, r * BLOCK_SIZE);
+                ctx.lineTo(canvas.width, r * BLOCK_SIZE);
+                ctx.stroke();
+            }
+
+            // 고정된 테트리스 보드 그리기
+            for (let r = 0; r < ROWS; r++) {
+                for (let c = 0; c < COLS; c++) {
+                    const type = board[r][c];
+                    if (type !== 0) {
+                        drawPixelBlock(ctx, c, r, type);
+                    }
+                }
+            }
+
+            if (currentPiece) {
+                // 고스트 하이라이트 가이드
+                let ghostY = currentPiece.y;
+                while (!checkCollision(currentPiece.matrix, currentPiece.x, ghostY + 1)) {
+                    ghostY++;
+                }
+                
+                ctx.save();
+                ctx.globalAlpha = 0.25; 
+                for (let r = 0; r < currentPiece.matrix.length; r++) {
+                    for (let c = 0; c < currentPiece.matrix[r].length; c++) {
+                        if (currentPiece.matrix[r][c] !== 0) {
+                            drawPixelBlock(ctx, currentPiece.x + c, ghostY + r, currentPiece.type, true);
+                        }
+                    }
+                }
+                ctx.restore();
+
+                // 실제 하강 중인 블록 렌더링
+                for (let r = 0; r < currentPiece.matrix.length; r++) {
+                    for (let c = 0; c < currentPiece.matrix[r].length; c++) {
+                        if (currentPiece.matrix[r][c] !== 0) {
+                            const boardY = currentPiece.y + r;
+                            if (boardY >= 0) { 
+                                drawPixelBlock(ctx, currentPiece.x + c, boardY, currentPiece.type);
+                            }
+                        }
+                    }
+                }
+            }
+
+            updateParticles();
+            drawParticles();
+        }
+
+        // 입체적인 8비트 아케이드 도트 블록 스타일 렌더링
+        function drawPixelBlock(targetCtx, x, y, type, isGhost = false) {
+            const size = (targetCtx === ctx) ? BLOCK_SIZE : MINI_BLOCK_SIZE;
+            const px = x * size;
+            const py = y * size;
+            const color = COLORS[type];
+
+            targetCtx.save();
+
+            if (isGhost) {
+                // 가이드는 심플한 테두리선으로만 구성
+                targetCtx.strokeStyle = color;
+                targetCtx.lineWidth = 1.5;
+                targetCtx.strokeRect(px + 1, py + 1, size - 2, size - 2);
+                targetCtx.restore();
+                return;
+            }
+
+            // 베이스 단색 채우기
+            targetCtx.fillStyle = color;
+            targetCtx.fillRect(px, py, size, size);
+
+            // 클래식 도트 베벨(입체 모서리) 연출 (밝은 위/왼, 어두운 아래/오른)
+            const edgeWidth = (size > 20) ? 3 : 2;
+
+            // 1. 위/왼쪽 밝은 하이라이트
+            targetCtx.fillStyle = 'rgba(255, 255, 255, 0.45)';
+            // 상단 가로줄
+            targetCtx.fillRect(px, py, size, edgeWidth);
+            // 좌측 세로줄
+            targetCtx.fillRect(px, py, edgeWidth, size);
+
+            // 2. 아래/오른쪽 그림자 섀도우
+            targetCtx.fillStyle = 'rgba(0, 0, 0, 0.4)';
+            // 하단 가로줄
+            targetCtx.fillRect(px, py + size - edgeWidth, size, edgeWidth);
+            // 우측 세로줄
+            targetCtx.fillRect(px + size - edgeWidth, py, edgeWidth, size);
+
+            // 중앙 핵심 픽셀 포인트 (고전 칩 장식)
+            targetCtx.fillStyle = 'rgba(255, 255, 255, 0.2)';
+            targetCtx.fillRect(px + edgeWidth + 1, py + edgeWidth + 1, size - (edgeWidth*2) - 2, size - (edgeWidth*2) - 2);
+
+            // 특수 기호 마크 (💣 및 글리치 X박스 문양)
+            if (type === 'B') {
+                targetCtx.fillStyle = '#ffffff';
+                targetCtx.font = (size > 20) ? 'bold 12px Arial' : 'bold 8px Arial';
+                targetCtx.textAlign = 'center';
+                targetCtx.textBaseline = 'middle';
+                targetCtx.fillText('💣', px + size/2, py + size/2);
+            } else if (type === 'G') {
+                // 글리치 버그 무늬 (X크로스)
+                targetCtx.strokeStyle = 'rgba(255,255,255,0.3)';
+                targetCtx.lineWidth = 1.5;
+                targetCtx.beginPath();
+                targetCtx.moveTo(px + 4, py + 4);
+                targetCtx.lineTo(px + size - 4, py + size - 4);
+                targetCtx.moveTo(px + size - 4, py + 4);
+                targetCtx.lineTo(px + 4, py + size - 4);
+                targetCtx.stroke();
+            }
+
+            targetCtx.restore();
+        }
+
+        // 프리뷰 미니보드 그리기 (HOLD)
+        function drawHold() {
+            holdCtx.clearRect(0, 0, holdCanvas.width, holdCanvas.height);
+            if (!holdPieceType) return;
+
+            const matrix = SHAPES[holdPieceType];
+            const size = matrix.length;
+            const offsetX = (holdCanvas.width - size * MINI_BLOCK_SIZE) / 2;
+            const offsetY = (holdCanvas.height - size * MINI_BLOCK_SIZE) / 2;
+
+            holdCtx.save();
+            holdCtx.translate(offsetX, offsetY);
+            for (let r = 0; r < size; r++) {
+                for (let c = 0; c < matrix[r].length; c++) {
+                    if (matrix[r][c] !== 0) {
+                        drawPixelBlock(holdCtx, c, r, holdPieceType);
+                    }
+                }
+            }
+            holdCtx.restore();
+        }
+
+        // 프리뷰 미니보드 그리기 (NEXT)
+        function drawNext() {
+            nextCtx.clearRect(0, 0, nextCanvas.width, nextCanvas.height);
+            if (!nextPieceType) return;
+
+            const matrix = SHAPES[nextPieceType];
+            const size = matrix.length;
+            const offsetX = (nextCanvas.width - size * MINI_BLOCK_SIZE) / 2;
+            const offsetY = (nextCanvas.height - size * MINI_BLOCK_SIZE) / 2;
+
+            nextCtx.save();
+            nextCtx.translate(offsetX, offsetY);
+            for (let r = 0; r < size; r++) {
+                for (let c = 0; c < matrix[r].length; c++) {
+                    if (matrix[r][c] !== 0) {
+                        drawPixelBlock(nextCtx, c, r, nextPieceType);
+                    }
+                }
+            }
+            nextCtx.restore();
+        }
+
+        // --- 오락실 패배 및 루프 핸들링 ---
+        function endGame() {
+            gameOver = true;
+            playSound('gameover');
+            overlayTitle = document.querySelector("#overlay h2") || {innerText: ""}; // 안전장치
+            overlayDesc.innerHTML = `YOUR SCORE: <b class="text-yellow-400">${score}</b><br>LEVEL: ${level}<br><br><span class="text-[6px] tracking-normal">PRESS ENTER TO INSERT COIN</span>`;
+            startBtn.innerText = "CONTINUE";
+            overlay.classList.remove('hidden');
+            dangerBanner.classList.add('hidden');
+        }
+
+        function togglePause() {
+            if (gameOver) return;
+            gamePaused = !gamePaused;
+
+            if (gamePaused) {
+                overlayDesc.innerHTML = "GAME PAUSED<br><br><span class='text-[6px]'>PRESS P TO RESUME</span>";
+                startBtn.innerText = "RESUME";
+                overlay.classList.remove('hidden');
+            } else {
+                overlay.classList.add('hidden');
+                lastTime = performance.now();
+                requestAnimationFrame(gameLoop);
+            }
+        }
+
+        function gameLoop(time) {
+            if (gameOver || gamePaused) return;
+
+            const deltaTime = time - lastTime;
+            lastTime = time;
+
+            // 블록 자유낙하 중력 연산
+            dropCounter += deltaTime;
+            if (dropCounter > dropInterval) {
+                moveDown();
+            }
+
+            // 장애물 시간 충전 연산
+            earthquakeTimer += deltaTime;
+            const progressRatio = Math.max(0, 100 - (earthquakeTimer / EARTHQUAKE_INTERVAL) * 100);
+            earthquakeProgress.style.width = `${progressRatio}%`;
+
+            if (earthquakeTimer >= EARTHQUAKE_INTERVAL) {
+                triggerEarthquakeGarbage();
+                earthquakeTimer = 0;
+            }
+
+            draw();
+            requestAnimationFrame(gameLoop);
+        }
+
+        // --- 키보드 인터랙션 가로채기 ---
+        window.addEventListener('keydown', (e) => {
+            const gameKeys = [
+                'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 
+                'KeyW', 'KeyS', 'KeyA', 'KeyD', 
+                'Space', ' ', 'Shift', 'KeyC', 'KeyP', 'Escape', 'Enter'
+            ];
+
+            if (gameKeys.includes(e.code) || gameKeys.includes(e.key)) {
+                e.preventDefault();
+            }
+
+            if (gameOver) {
+                if (e.key === 'Enter' || e.key === ' ' || e.code === 'Space' || e.code === 'Enter') {
+                    init();
+                }
+                return;
+            }
+
+            switch(e.code) {
+                case 'ArrowLeft':
+                case 'KeyA':
+                    moveLeft();
+                    break;
+                case 'ArrowRight':
+                case 'KeyD':
+                    moveRight();
+                    break;
+                case 'ArrowUp':
+                case 'KeyW':
+                    rotatePiece();
+                    break;
+                case 'ArrowDown':
+                case 'KeyS':
+                    moveDown();
+                    break;
+                case 'Space':
+                    hardDrop();
+                    break;
+                case 'ShiftLeft':
+                case 'ShiftRight':
+                case 'KeyC':
+                    holdPiece();
+                    break;
+                case 'KeyP':
+                case 'Escape':
+                    togglePause();
+                    break;
+            }
+        });
+
+        // --- 가상 아케이드 패널 터치 스위치 바인딩 ---
+        const bindButton = (elementId, action) => {
+            const btn = document.getElementById(elementId);
+            btn.addEventListener('touchstart', (e) => {
+                e.preventDefault();
+                action();
+            });
+            btn.addEventListener('mousedown', (e) => {
+                e.preventDefault();
+                action();
+            });
+        };
+
+        bindButton('ctrlLeft', moveLeft);
+        bindButton('ctrlRight', moveRight);
+        bindButton('ctrlRotate', rotatePiece);
+        bindButton('ctrlDown', moveDown);
+        bindButton('ctrlHardDrop', hardDrop);
+        bindButton('ctrlHold', holdPiece);
+
+        startBtn.addEventListener('click', () => {
+            if (gameOver) {
+                init();
+            } else if (gamePaused) {
+                togglePause();
+            }
+        });
+
+        // 아케이드 전원 대기화면 로딩
+        function showStartScreen() {
+            overlayDesc.innerHTML = "INSERT COIN TO PLAY<br><br><span class='text-[6px] text-emerald-400'>PC: PRESS ENTER KEY TO START</span>";
+            startBtn.innerText = "INSERT COIN";
+            overlay.classList.remove('hidden');
+
+            ctx.fillStyle = '#050508';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.02)';
+            for (let c = 0; c < COLS; c++) {
+                ctx.beginPath();
+                ctx.moveTo(c * BLOCK_SIZE, 0);
+                ctx.lineTo(c * BLOCK_SIZE, canvas.height);
+                ctx.stroke();
+            }
+        }
+
+        window.onload = function() {
+            showStartScreen();
+        }
+    </script>
+
+</body></html>
